@@ -1,0 +1,71 @@
+/* الحاوية الرئيسية */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+/* العنوان والترحيب */
+.text-center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.text-center h1 {
+  color: #fff;
+  font-size: 32px;
+}
+.text-center .highlight {
+  color: gold;
+}
+.text-center .lead {
+  color: #ccc;
+  font-size: 16px;
+}
+
+/* الكروت */
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  color: #eee;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+}
+
+.card h2 {
+  color: gold;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* الأزرار */
+.btn-primary {
+  background: gold;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.btn-primary:hover {
+  background: darkgoldenrod;
+  color: #fff;
+}
